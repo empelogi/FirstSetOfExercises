@@ -1,7 +1,7 @@
 # FirstSetOfExercises
 Contains a main method which implements a menu for the user to guide through algorithms concerning
 
-A. Simple algorithms<br/>
+1. Simple algorithms<br/>
 Factorial<br/>
 Prime numbers<br/>
 Max integer for which factorial can be calculate<br/>
