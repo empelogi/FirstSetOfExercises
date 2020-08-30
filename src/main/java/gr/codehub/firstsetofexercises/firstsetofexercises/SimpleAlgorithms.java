@@ -19,6 +19,23 @@ public class SimpleAlgorithms {
         return fact;
     }
 
+    //method to calculate the max integer for which an integer factorial can be calculated
+
+    static void maxValueOfFactorial(){
+        int maxIntegerFactorial = 2;
+        int factorial = 1;
+        while (true)
+        {
+            // when factorial crosses its size,
+            // it gives negative value
+            if (factorial < 0)
+                break;
+            maxIntegerFactorial++;
+            factorial = factorial * maxIntegerFactorial;
+        }
+        System.out.println("The  max value of integer for which an INTEGER factorial can be calculated is " + (maxIntegerFactorial - 1));
+    }
+
     //simple method to calculate if a number is a prime number
     static boolean isPrime(int input) {
 
@@ -75,7 +92,8 @@ public class SimpleAlgorithms {
                 "Enter 2: \n if you want know if the number is prime or not \n" +
                 "Enter 3: \n if you want to calculate the sum of 1+1/2+..+1/n \n" +
                 "Enter 4: \n if you want to count the digits in a long number \n" +
-                "Enter 5: \n if you want to calculate the decimal part of a float \n");
+                "Enter 5: \n if you want to calculate the decimal part of a float \n"+
+                "Enter 6: \n if you want to calculate the max integer for which an integer factorial can be calculated\n");
 
         Scanner input = new Scanner(System.in);
         int choice = input.nextInt();
@@ -102,7 +120,10 @@ public class SimpleAlgorithms {
             System.out.println("Enter your float must be comma (,) separated number");
             float number = longInput.nextFloat();
             printFloatDecimals(number);
-        } else {
+        } else if(choice == 6){
+            maxValueOfFactorial();
+        }
+        else {
             System.out.println("Invalid option");
         }
 
