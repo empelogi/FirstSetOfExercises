@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Scanner;
 import java.util.Stack;
 
+
 public class ExercisesOnCollections {
 
     //method to create a sub list containing only prime numbers
