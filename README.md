@@ -17,3 +17,5 @@ Reverse of a string using only a stack .   <br/>
 Check if a word is symmetric,  ignoring cases.<br/>
     
 3. Algorithm for Strong Password creation using Java Regular Expressions<br/>
+
+Contains a Stack class that implements the basic functions of a stack
